@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import NavButtons from './NavButtons';
-import {Link} from "react-router-dom"
 import './Nav.css'
 import { MenuItems } from './MenuItems'
-
 
 function Nav() {
 
     const [clicked, setClick] = useState(false);
+
 
     return (
         <nav className="nav">
@@ -19,7 +18,7 @@ function Nav() {
                 {
                     MenuItems.map((item, index) => {
                         return (
-                            <li className={item.cName} key={index}><Link className="link" style={{ textDecoration: 'none' }} to={item.url}>{item.title}</Link></li>
+                            <li className={item.cName} key={index}><p className="link" onClick={console.log("pushed")}>{item.title}</p></li>
                         )
                     })
                 }
