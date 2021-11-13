@@ -1,12 +1,49 @@
-body {
+@import "./colors";
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
+.text {
+  &-success {
+    color: $color-green;
+  }
 
+  &-error {
+    color: $color-red;
+  }
 
+  &-light {
+    font-weight: lighter !important;
+  }
+
+  &-normal {
+    font-weight: normal !important;
+  }
+
+  &-bold {
+    font-weight: bold !important;
+  }
+}
+
+.w {
+  &-25 {
+    width: 25%;
+  }
+
+  &-50 {
+    width: 50%;
+  }
+
+  &-75 {
+    width: 75%;
+  }
+
+  &-100 {
+    width: 100%;
+  }
+}
