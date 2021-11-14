@@ -1,0 +1,44 @@
+.nav {
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height: 55px;
+
+  .nav-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 40px;
+    margin: auto 0;
+
+    .nav-heading {
+      font-size: 20px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+
+      .nav-logo {
+        width: 35px;
+        margin-right: 10px;
+      }
+    }
+
+    .nav-links {
+      li {
+        display: inline;
+        margin: 0 40px;
+        list-style-type: none;
+
+        a {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
