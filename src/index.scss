@@ -8,6 +8,10 @@
   text-align: center;
 }
 
+.root {
+  background: $color-background;
+}
+
 .text {
   &-success {
     color: $color-green;

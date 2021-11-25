@@ -1,0 +1,35 @@
+@import "../../colors";
+
+.footer-box {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .footer-box-inner {
+    height: 100%;
+
+    p {
+      text-align: left;
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: $color-main-text;
+      font-weight: 100;
+    }
+
+    .footer-box-links {
+      li {
+        list-style-type: none;
+        text-align: left;
+        margin-bottom: 5px;
+
+        a {
+          text-decoration: none;
+          color: $color-main-text;
+          font-size: 15px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@ const Home = () => {
     <div className="home">
       <div className="hero-section">
         <div className="hero-inner">
-          <h1>Never was learning easier</h1>
+          <h1>Learning has never been easier</h1>
           <p>Vocascan - A highly configurable vocabulary trainer</p>
           <div className="button-wrapper">
             <Button block uppercase disabled={true}>
@@ -18,6 +18,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="product-preview"></div>
     </div>
   );
 };
