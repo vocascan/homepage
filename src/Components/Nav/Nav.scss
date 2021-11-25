@@ -1,6 +1,8 @@
+@import "../../colors";
+
 .nav {
   overflow: hidden;
-  background-color: #fff;
+  background: $color-alternative;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -21,6 +23,10 @@
       display: flex;
       align-items: center;
 
+      p {
+        color: $color-main-text;
+      }
+
       .nav-logo {
         width: 35px;
         margin-right: 10px;
@@ -34,7 +40,7 @@
         list-style-type: none;
 
         a {
-          color: #000;
+          color: $color-main-text;
           text-decoration: none;
           cursor: pointer;
         }

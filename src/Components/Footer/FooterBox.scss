@@ -1,3 +1,5 @@
+@import "../../colors";
+
 .footer-box {
   height: 100%;
   display: flex;
@@ -11,7 +13,7 @@
       text-align: left;
       margin-bottom: 10px;
       font-size: 20px;
-      color: #fff;
+      color: $color-main-text;
       font-weight: 100;
     }
 
@@ -23,7 +25,7 @@
 
         a {
           text-decoration: none;
-          color: #fff;
+          color: $color-main-text;
           font-size: 15px;
           font-weight: 300;
         }

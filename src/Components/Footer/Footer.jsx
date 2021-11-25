@@ -28,8 +28,8 @@ const Footer = () => {
         <div className="footer-bottom-wrapper">
           <div className="footer-bottom-wrapper-inner">
             <p>©2021 Vocascan</p>
-            <Link to="terms">Terms</Link>
-            <Link to="privacy">Privacy</Link>
+            <Link to="/terms">Terms</Link>
+            <Link to="/privacy">Privacy</Link>
           </div>
         </div>
       </div>
