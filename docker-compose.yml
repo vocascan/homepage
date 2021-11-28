@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: vocascan/homepage
+    restart: always
+    tty: true
+    volumes:
+      - './imprint.html:/usr/share/nginx/html/imprint.html:ro'
+    ports:
+      - '3000:3000'
