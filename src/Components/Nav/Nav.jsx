@@ -11,10 +11,12 @@ const Nav = () => {
   return (
     <div className="nav">
       <div className="nav-wrapper">
-        <div className="nav-heading">
-          <img className="nav-logo" src={VocascanLogo} alt="Logo" />
-          <p>Vocascan</p>
-        </div>
+        <Link className="heading-link-wrapper" to="/">
+          <div className="nav-heading">
+            <img className="nav-logo" src={VocascanLogo} alt="Logo" />
+            <p>Vocascan</p>
+          </div>
+        </Link>
         <div className="nav-links">
           <ul>
             <li>

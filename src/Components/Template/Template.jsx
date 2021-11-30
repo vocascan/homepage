@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 
+import "./Template.scss";
+
 const Template = ({ url }) => {
   const [template, setTemplate] = useState(null);
 
@@ -11,7 +13,12 @@ const Template = ({ url }) => {
       });
   }, [url]);
 
-  return <div dangerouslySetInnerHTML={{ __html: template }}></div>;
+  return (
+    <div
+      className="template-wrapper"
+      dangerouslySetInnerHTML={{ __html: template }}
+    ></div>
+  );
 };
 
 export default Template;

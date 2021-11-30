@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="footer-bottom-wrapper">
           <div className="footer-bottom-wrapper-inner">
             <p>©2021 Vocascan</p>
-            <Link to="/imprint">Imprint</Link>
+            <Link to="/legal-notice">Legal Notice</Link>
             <Link to="/privacy">Privacy</Link>
           </div>
         </div>

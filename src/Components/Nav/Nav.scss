@@ -7,6 +7,7 @@
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   height: 55px;
+  z-index: 1000;
 
   .nav-wrapper {
     height: 100%;
@@ -17,19 +18,25 @@
     padding: 0 40px;
     margin: auto 0;
 
-    .nav-heading {
-      font-size: 20px;
-      text-transform: uppercase;
-      display: flex;
-      align-items: center;
+    .heading-link-wrapper {
 
-      p {
-        color: $color-main-text;
-      }
+      text-decoration: none;
 
-      .nav-logo {
-        width: 35px;
-        margin-right: 10px;
+      .nav-heading {
+        font-size: 20px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+  
+        p {
+          color: $color-main-text;
+          
+        }
+  
+        .nav-logo {
+          width: 35px;
+          margin-right: 10px;
+        }
       }
     }
 

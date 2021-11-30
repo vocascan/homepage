@@ -2,6 +2,8 @@ import React from "react";
 
 import Button from "../../Components/Button/Button.jsx";
 
+import HeroSectionImage from "../../images/background2.svg";
+
 import "./Home.scss";
 
 const Home = () => {
@@ -17,6 +19,7 @@ const Home = () => {
             </Button>
           </div>
         </div>
+        <img src={HeroSectionImage} alt="test" />
       </div>
       <div className="product-preview"></div>
     </div>
