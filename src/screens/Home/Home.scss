@@ -8,19 +8,34 @@
   align-items: center;
 
   .hero-section {
-    width: 80%;
-    height: 100vh;
+    width: 100%;
+    height: calc(100vh - 55px);
+    margin-top: 55px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    .background-video {
+      width: 100%;
+      height: inherit;
+      object-fit: cover;
+      filter: blur(3px);
+    }
 
     .hero-inner {
+      width: 80%;
+      position: absolute;
+
+      .typing-animation {
+        color: $color-main-text-inverse;
+      }
+      
       h1 {
         font-size: 40px;
         text-align: left;
         font-weight: 400;
         text-transform: uppercase;
-        color: $color-main-text;
+        color: $color-main-text-inverse;
       }
 
       p {
@@ -29,11 +44,11 @@
         text-align: left;
         font-weight: 100;
         text-transform: uppercase;
-        color: $color-main-text;
+        color: $color-main-text-inverse;
       }
 
       .button-wrapper {
-        width: 30%;
+        width: 15%;
       }
     }
   }
