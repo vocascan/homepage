@@ -2,8 +2,12 @@ import React, { useEffect, useState } from "react";
 
 import "./Template.scss";
 
-const Template = ({ url }) => {
-  const [template, setTemplate] = useState(null);
+interface Props {
+  url: string
+}
+
+const Template: React.FC<Props> = ({ url }) => {
+  const [template, setTemplate] = useState<string>("");
 
   useEffect(() => {
     fetch(url)

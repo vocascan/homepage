@@ -2,10 +2,10 @@
 
 .nav {
   overflow: hidden;
-  background: $color-alternative;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  background: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: 55px;
   z-index: 1000;
 
@@ -19,7 +19,6 @@
     margin: auto 0;
 
     .heading-link-wrapper {
-
       text-decoration: none;
 
       .nav-heading {
@@ -27,12 +26,11 @@
         text-transform: uppercase;
         display: flex;
         align-items: center;
-  
+
         p {
           color: $color-main-text;
-          
         }
-  
+
         .nav-logo {
           width: 35px;
           margin-right: 10px;

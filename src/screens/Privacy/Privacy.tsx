@@ -1,6 +1,6 @@
 import React from "react";
 
-import Template from "../../Components/Template/Template.jsx";
+import Template from "../../Components/Template/Template";
 
 import "./Privacy.scss";
 

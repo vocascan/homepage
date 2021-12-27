@@ -1,18 +1,16 @@
-import React from "react";
+import React from 'react';
 import { Route, BrowserRouter, Redirect, Switch } from "react-router-dom";
 
-import Footer from "./Components/Footer/Footer.jsx";
-import Nav from "./Components/Nav/Nav.jsx";
-import Download from "./screens/Download/Download.jsx";
-import Home from "./screens/Home/Home.jsx";
-import LegalNotice from "./screens/Imprint/LegalNotice.jsx";
-import Privacy from "./screens/Privacy/Privacy.jsx";
+import Footer from "./Components/Footer/Footer";
+import Nav from "./Components/Nav/Nav";
+import Download from "./screens/Download/Download";
+import Home from "./screens/Home/Home";
+import LegalNotice from "./screens/Legal/LegalNotice";
+import Privacy from "./screens/Privacy/Privacy";
 
-import ScrollToTop from "./hooks/ScrollToTop.js";
+import ScrollToTop from "./hooks/ScrollToTop";
 
-import "./index.scss";
-
-const App = () => {
+const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Nav />
@@ -29,6 +27,6 @@ const App = () => {
       <Footer />
     </BrowserRouter>
   );
-};
+}
 
 export default App;

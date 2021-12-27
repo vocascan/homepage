@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Button from "../Button/Button.jsx";
+import Button from "../Button/Button";
 
 import VocascanLogo from "../../images/logo/color-round.svg";
 
 import "./Nav.scss";
 
-const Nav = () => {
+const Nav: React.FC = () => {
   return (
     <div className="nav">
       <div className="nav-wrapper">

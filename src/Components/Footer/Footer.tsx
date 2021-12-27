@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import FooterBox from "./FooterBox.jsx";
+import FooterBox from "./FooterBox";
 
-import { footerLinks } from "../../utils/constants.js";
+import { footerLinks } from "../../utils/constants";
 
 import VocascanLogo from "../../images/logo/color-round.svg";
 
 import "./Footer.scss";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <div className="footer">
       <div className="footer-inner">
