@@ -2,6 +2,8 @@ import React from "react";
 
 import Button from "../../Components/Button/Button";
 
+import sample from "../../images/videos/hero-section.mp4";
+
 import "./Home.scss";
 
 
@@ -10,7 +12,7 @@ const Home = () => {
     <div className="home">
       <div className="hero-section">
         <video className="background-video" autoPlay loop muted>
-          {/*<source src={sample} type="video/mp4" />*/}
+          <source src={sample} type="video/mp4" />
         </video>
         <div className="hero-inner">
           <h1>Explore the variety of languages</h1>
