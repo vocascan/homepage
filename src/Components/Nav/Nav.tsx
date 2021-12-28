@@ -14,7 +14,7 @@ const Nav: React.FC = () => {
 
   const listenScrollEvent = useCallback(() => {
     if (window.scrollY > height) {
-      return setBackground("bg-black");
+      return setBackground("bg-background");
     } else if (window.scrollY < height) {
       return setBackground("bg-transparent");
     }
@@ -34,10 +34,10 @@ const Nav: React.FC = () => {
         <Link to="/">
           <div className="flex center items-center">
             <img className="w-9 " src={VocascanLogo} alt="Logo" />
-            <p className="text-white pl-3 text-xl uppercase">Vocascan</p>
+            <p className="text-text-light pl-3 text-xl uppercase">Vocascan</p>
           </div>
         </Link>
-        <h1 className="text-white">Hello</h1>
+        <h1 className="text-text-light">Hello</h1>
       </div>
       {/*<div className="nav-wrapper">
         
