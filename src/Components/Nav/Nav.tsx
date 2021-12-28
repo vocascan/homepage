@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 
 import Button from "../Button/Button";
@@ -6,10 +6,30 @@ import Button from "../Button/Button";
 import VocascanLogo from "../../images/logo/color-round.svg";
 
 import "./Nav.scss";
+import useWindowDimensions from "../../hooks/UseWindowDimensions";
 
 const Nav: React.FC = () => {
+  const { height } = useWindowDimensions();
+  const [background, setBackground] = useState("bg-transparent");
+
+  const listenScrollEvent = useCallback(() => {
+    if (window.scrollY > height) {
+      return setBackground("bg-black");
+    } else if (window.scrollY < height) {
+      return setBackground("bg-transparent");
+    }
+  }, [height]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+
+    return () => window.removeEventListener("scroll", listenScrollEvent);
+  }, [listenScrollEvent]);
+
   return (
-    <div className="fixed bg-transparent h-14 overflow-hidden top-0 w-full z-50">
+    <div
+      className={`${background} fixed bg-transparent h-14 overflow-hidden top-0 w-full z-50`}
+    >
       <div className="flex flex-row justify-between items-center h-full w-5/6 m-auto">
         <Link to="/">
           <div className="flex center items-center">
