@@ -4,14 +4,14 @@ import React from "react";
 import "./Button.scss";
 
 interface Props {
-  uppercase?: boolean,
-  variant?: string,
-  disabled?: boolean,
-  appearance?: string,
-  block?: boolean,
-  onClick?: () => {},
-  children?: any,
-  className?: string
+  uppercase?: boolean;
+  variant?: string;
+  disabled?: boolean;
+  appearance?: string;
+  block?: boolean;
+  onClick?: () => {};
+  children?: any;
+  className?: string;
 }
 
 const Button: React.FC<Props> = ({

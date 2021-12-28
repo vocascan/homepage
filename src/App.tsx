@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Route, BrowserRouter, Redirect, Switch } from "react-router-dom";
 
 import Footer from "./Components/Footer/Footer";
@@ -27,6 +27,6 @@ const App: React.FC = () => {
       <Footer />
     </BrowserRouter>
   );
-}
+};
 
 export default App;

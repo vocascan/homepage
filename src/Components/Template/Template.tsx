@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./Template.scss";
 
 interface Props {
-  url: string
+  url: string;
 }
 
 const Template: React.FC<Props> = ({ url }) => {

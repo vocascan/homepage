@@ -18,7 +18,10 @@
       width: 100%;
       height: inherit;
       object-fit: cover;
-      filter: blur(3px);
+      //filter: blur(3px);
+      transform: rotateY(180deg);
+      transform: rotateY(180deg); /* Safari and Chrome */
+      transform: rotateY(180deg); /* Firefox */
     }
 
     .hero-inner {

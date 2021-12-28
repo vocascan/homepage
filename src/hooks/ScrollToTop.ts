@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { withRouter } from "react-router-dom";
 
 interface Props {
-  history: any
+  history: any;
 }
 
 const ScrollToTop: React.FC<Props> = ({ history }) => {
@@ -16,6 +16,6 @@ const ScrollToTop: React.FC<Props> = ({ history }) => {
   }, [history]);
 
   return null;
-}
+};
 
 export default withRouter(ScrollToTop);

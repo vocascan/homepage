@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import "./FooterBox.scss";
 
 interface Props {
-  heading: string,
-  list: any
+  heading: string;
+  list: any;
 }
 
 const FooterBox: React.FC<Props> = ({ heading, list }) => {
