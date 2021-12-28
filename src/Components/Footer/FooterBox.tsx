@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./FooterBox.scss";
-
 interface Props {
   heading: string;
   list: any;
@@ -10,17 +8,27 @@ interface Props {
 
 const FooterBox: React.FC<Props> = ({ heading, list }) => {
   return (
-    <div className="footer-box">
+    <div className="w-full flex align-center mb-5">
       <div className="footer-box-inner">
-        <p>{heading}</p>
+        <p className="text-text-light text-xl font-thin mb-3">{heading}</p>
         <div className="footer-box-links">
           <ul>
             {list?.map((e: any) => (
               <li>
                 {/^https?:\/\//i.test(e.link) ? (
-                  <a href={e.link}>{e.name}</a>
+                  <a
+                    className="text-text-light text-sm font-light"
+                    href={e.link}
+                  >
+                    {e.name}
+                  </a>
                 ) : (
-                  <Link to={e.link}>{e.name}</Link>
+                  <Link
+                    className="text-text-light text-sm font-light"
+                    to={e.link}
+                  >
+                    {e.name}
+                  </Link>
                 )}
               </li>
             ))}
