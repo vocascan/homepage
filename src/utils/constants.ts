@@ -16,3 +16,9 @@ export const footerLinks = {
     { name: "Github", link: "https://github.com/vocascan" },
   ],
 };
+
+export const navLinks = [
+  { name: "Download", link: "/download" },
+  { name: "Docs", link: "https://docs.vocascan.com" },
+  { name: "About", link: "https://github.com/vocascan" },
+];
