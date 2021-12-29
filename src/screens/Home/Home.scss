@@ -1,63 +1,6 @@
 @import "../../colors";
 
-.home {
-  width: 100%;
-  background: $color-background;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  .hero-section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .background-video {
-      width: 100%;
-      height: inherit;
-      object-fit: cover;
-      //filter: blur(3px);
-      transform: rotateY(180deg);
-      transform: rotateY(180deg); /* Safari and Chrome */
-      transform: rotateY(180deg); /* Firefox */
-    }
-
-    .hero-inner {
-      width: 80%;
-      position: absolute;
-
-      .typing-animation {
-        color: $color-main-text-inverse;
-      }
-
-      h1 {
-        font-size: 40px;
-        text-align: left;
-        font-weight: 400;
-        text-transform: uppercase;
-        color: $color-main-text-inverse;
-      }
-
-      p {
-        margin: 30px 0;
-        font-size: 20px;
-        text-align: left;
-        font-weight: 100;
-        text-transform: uppercase;
-        color: $color-main-text-inverse;
-      }
-
-      .button-wrapper {
-        width: 15%;
-      }
-    }
-  }
-
-  .product-preview {
-    width: 100%;
-    height: 100vh;
-    background: $color-background;
-  }
+.offer-box-icon {
+  font-size: 150px;
+  color: white;
 }
