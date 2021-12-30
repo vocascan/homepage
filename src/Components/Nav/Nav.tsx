@@ -30,6 +30,10 @@ const Nav: React.FC = () => {
     setHamburgerOpen(!hamburgerOpen);
   }, [hamburgerOpen]);
 
+  const closeHamburgerMenu = useCallback(() => {
+    setHamburgerOpen(false);
+  }, []);
+
   //add background color, if nav is below hero section
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -49,7 +53,7 @@ const Nav: React.FC = () => {
         } fixed h-14 overflow-hidden top-0 w-full z-50`}
       >
         <div className="flex flex-row justify-between items-center h-full w-5/6 m-auto">
-          <Link to="/" onClick={triggerHamburgerMenu}>
+          <Link to="/" onClick={closeHamburgerMenu}>
             <div className="flex center items-center">
               <img className="w-9 " src={VocascanLogo} alt="Logo" />
               <p className="text-text-light pl-3 text-xl uppercase">Vocascan</p>
@@ -94,8 +98,10 @@ const Nav: React.FC = () => {
         </div>
       </div>
       <div
-        className={`w-full h-full bg-alternative fixed top-0 left-0 z-10 overflow-hidden ${
+        className={`w-full h-full bg-alternative fixed top-0 left-0 overflow-hidden ${
           hamburgerOpen ? "opacity-100" : "opacity-0"
+        } ${
+          hamburgerOpen ? "z-10" : "-z-1"
         } flex flex-col justify-center items-center transition ease-in-out delay-0 duration-700`}
       >
         <ul className="flex flex-col">
