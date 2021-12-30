@@ -15,8 +15,12 @@ import SettingsIcon from "../../images/icons/settings.svg";
 
 import "./Home.scss";
 import OfferBox from "../../Components/OfferBox/OfferBox";
+import useWindowDimensions from "../../hooks/UseWindowDimensions";
 
 const Home = () => {
+  //fetch width to check whether feature should be reversed or not at specific display resolution
+  const { width } = useWindowDimensions();
+
   return (
     <div className="w-full flex flex-col items-center bg-background justify-center">
       <div className="w-full h-screen flex flex-col items-center justify-center">
@@ -63,6 +67,7 @@ const Home = () => {
             flashcards, we have developed a highly configurable trainer that has
             many settings to adapt it to your learning methods and strategies.
           </p>
+          <h1 className="text-white">{width}</h1>
         </div>
         <div className="w-full mt-10">
           <Feature
@@ -74,7 +79,7 @@ const Home = () => {
           />
           <div className="w-1/2 h-1 bg-primary-light rounded-xl mx-auto lg:hidden"></div>
           <Feature
-            reverse
+            reverse={width < 1024 ? false : true}
             heading={"Large language support"}
             image={featureLanguageGif}
             description={

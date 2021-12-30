@@ -49,7 +49,7 @@ const Nav: React.FC = () => {
         } fixed h-14 overflow-hidden top-0 w-full z-50`}
       >
         <div className="flex flex-row justify-between items-center h-full w-5/6 m-auto">
-          <Link to="/">
+          <Link to="/" onClick={triggerHamburgerMenu}>
             <div className="flex center items-center">
               <img className="w-9 " src={VocascanLogo} alt="Logo" />
               <p className="text-text-light pl-3 text-xl uppercase">Vocascan</p>
@@ -60,11 +60,19 @@ const Nav: React.FC = () => {
               {navLinks?.map((e: any) => (
                 <li>
                   {/^https?:\/\//i.test(e.link) ? (
-                    <a className="text-text-light text-lg mx-10" href={e.link}>
+                    <a
+                      className="text-text-light text-lg mx-10"
+                      href={e.link}
+                      onClick={triggerHamburgerMenu}
+                    >
                       {e.name}
                     </a>
                   ) : (
-                    <Link className="text-text-light text-lg mx-10" to={e.link}>
+                    <Link
+                      className="text-text-light text-lg mx-10"
+                      to={e.link}
+                      onClick={triggerHamburgerMenu}
+                    >
                       {e.name}
                     </Link>
                   )}
@@ -87,20 +95,25 @@ const Nav: React.FC = () => {
       </div>
       <div
         className={`w-full h-full bg-alternative fixed top-0 left-0 z-10 overflow-hidden ${
-          hamburgerOpen ? "fixed" : "hidden"
-        } flex flex-col justify-center items-center`}
+          hamburgerOpen ? "opacity-100" : "opacity-0"
+        } flex flex-col justify-center items-center transition ease-in-out delay-0 duration-700`}
       >
         <ul className="flex flex-col">
           {navLinks?.map((e: any) => (
             <li className="text-center my-2">
               {/^https?:\/\//i.test(e.link) ? (
-                <a className="text-text-light text-lg" href={e.link}>
+                <a
+                  className="text-text-light text-lg"
+                  href={e.link}
+                  onClick={triggerHamburgerMenu}
+                >
                   {e.name}
                 </a>
               ) : (
                 <Link
                   className="text-text-light text-lg text-center"
                   to={e.link}
+                  onClick={triggerHamburgerMenu}
                 >
                   {e.name}
                 </Link>
@@ -109,7 +122,7 @@ const Nav: React.FC = () => {
           ))}
         </ul>
         <div className="mt-5">
-          <Button block uppercase>
+          <Button block uppercase onClick={triggerHamburgerMenu}>
             {"Start Learning"}
           </Button>
         </div>

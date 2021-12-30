@@ -9,7 +9,7 @@ interface Props {
   disabled?: boolean;
   appearance?: string;
   block?: boolean;
-  onClick?: () => {};
+  onClick?: () => void;
   children?: any;
   className?: string;
 }
