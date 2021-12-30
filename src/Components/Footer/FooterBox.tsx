@@ -8,7 +8,7 @@ interface Props {
 
 const FooterBox: React.FC<Props> = ({ heading, list }) => {
   return (
-    <div className="w-full flex align-center mb-5">
+    <div className="flex align-center mb-5">
       <div className="footer-box-inner">
         <p className="text-text-light text-xl font-thin mb-3">{heading}</p>
         <div className="footer-box-links">

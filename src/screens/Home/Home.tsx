@@ -103,7 +103,7 @@ const Home = () => {
             How to start
           </h1>
           <div className="w-1/4 h-1 bg-primary-standard rounded-xl mx-auto mb-5 lg:w-20"></div>
-          <p className="text-text-light text-center lg:text-lg">
+          <p className="text-text-light text-justify lg:text-lg">
             As Vocascan is cloud based, you will need to set up your own server
             if you do not want to use ours. This gives you the greatest control
             over your data. Learn more about how to use Vocascan.
