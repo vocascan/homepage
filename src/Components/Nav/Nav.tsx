@@ -85,7 +85,7 @@ const Nav: React.FC = () => {
             </ul>
           </div>
           <div className="hidden lg:block">
-            <Button block uppercase>
+            <Button block uppercase disabled>
               {"Start Learning"}
             </Button>
           </div>
@@ -101,7 +101,7 @@ const Nav: React.FC = () => {
         className={`w-full h-full bg-alternative fixed top-0 left-0 overflow-hidden ${
           hamburgerOpen ? "opacity-100" : "opacity-0"
         } ${
-          hamburgerOpen ? "z-10" : "-z-1"
+          hamburgerOpen ? "z-10" : "-z-10"
         } flex flex-col justify-center items-center transition ease-in-out delay-0 duration-700`}
       >
         <ul className="flex flex-col">
@@ -128,7 +128,7 @@ const Nav: React.FC = () => {
           ))}
         </ul>
         <div className="mt-5">
-          <Button block uppercase onClick={triggerHamburgerMenu}>
+          <Button block uppercase disabled onClick={triggerHamburgerMenu}>
             {"Start Learning"}
           </Button>
         </div>

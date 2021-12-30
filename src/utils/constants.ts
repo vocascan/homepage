@@ -22,3 +22,5 @@ export const navLinks = [
   { name: "Docs", link: "https://docs.vocascan.com" },
   { name: "About", link: "https://github.com/vocascan" },
 ];
+
+export const docsDomain = "https://docs.vocascan.com";

@@ -16,6 +16,7 @@ import SettingsIcon from "../../images/icons/settings.svg";
 import "./Home.scss";
 import OfferBox from "../../Components/OfferBox/OfferBox";
 import useWindowDimensions from "../../hooks/UseWindowDimensions";
+import { docsDomain } from "../../utils/constants";
 
 const Home = () => {
   //fetch width to check whether feature should be reversed or not at specific display resolution
@@ -36,14 +37,16 @@ const Home = () => {
           </p>
           <div className="flex flex-col lg:w-3/5 lg:flex-row">
             <div className="w-3/5 mb-5 lg:w-1/4 lg:mr-6 lg:mb-0">
-              <Button block uppercase>
+              <Button block uppercase disabled>
                 {"Start Learning"}
               </Button>
             </div>
             <div className="w-3/5 lg:w-1/4">
-              <Button variant="outline" appearance="green" uppercase>
-                {"Documentation"}
-              </Button>
+              <a href={docsDomain}>
+                <Button variant="outline" appearance="green" uppercase>
+                  {"Documentation"}
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -105,14 +108,16 @@ const Home = () => {
             if you do not want to use ours. This gives you the greatest control
             over your data. Learn more about how to use Vocascan.
           </p>
-          <Button
-            className="mx-auto mt-5"
-            variant={"outline"}
-            appearance="green"
-            uppercase
-          >
-            {"Learn more"}
-          </Button>
+          <a href={docsDomain}>
+            <Button
+              className="mx-auto mt-5"
+              variant={"outline"}
+              appearance="green"
+              uppercase
+            >
+              {"Learn more"}
+            </Button>
+          </a>
         </div>
         <div className="w-full mb-10 ">
           <h1 className="uppercase text-xl text-text-light text-center mb-2 mt-20">
