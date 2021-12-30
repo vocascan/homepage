@@ -35,13 +35,15 @@ const Home = () => {
           <p className="text-xl text-text-light mb-3 lg:text-xl">
             Vocascan - A highly configurable vocabulary trainer
           </p>
-          <div className="flex flex-col lg:w-3/5 lg:flex-row">
-            <div className="w-3/5 mb-5 lg:w-1/4 lg:mr-6 lg:mb-0">
-              <Button block uppercase disabled>
-                {"Start Learning"}
-              </Button>
+          <div className="flex flex-col lg:flex-row">
+            <div className="mb-5 lg:mr-6 lg:mb-0">
+              <a href={docsDomain}>
+                <Button uppercase disabled>
+                  {"Start Learning"}
+                </Button>
+              </a>
             </div>
-            <div className="w-3/5 lg:w-1/4">
+            <div>
               <a href={docsDomain}>
                 <Button variant="outline" appearance="green" uppercase>
                   {"Documentation"}

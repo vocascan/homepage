@@ -64,19 +64,11 @@ const Nav: React.FC = () => {
               {navLinks?.map((e: any) => (
                 <li>
                   {/^https?:\/\//i.test(e.link) ? (
-                    <a
-                      className="text-text-light text-lg mx-10"
-                      href={e.link}
-                      onClick={triggerHamburgerMenu}
-                    >
+                    <a className="text-text-light text-lg mx-10" href={e.link}>
                       {e.name}
                     </a>
                   ) : (
-                    <Link
-                      className="text-text-light text-lg mx-10"
-                      to={e.link}
-                      onClick={triggerHamburgerMenu}
-                    >
+                    <Link className="text-text-light text-lg mx-10" to={e.link}>
                       {e.name}
                     </Link>
                   )}
