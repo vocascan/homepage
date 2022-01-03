@@ -2,6 +2,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Roboto"],
+      },
       colors: {
         background: "#121212",
         alternative: "#1e1e1e",

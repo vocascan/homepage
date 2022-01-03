@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex flex-col justify-between lg:flex-row">
           {Object.entries(footerLinks).map(([key, value], i) => (
-            <FooterBox heading={key} list={value} />
+            <FooterBox key={key} heading={key} list={value} />
           ))}
         </div>
       </div>

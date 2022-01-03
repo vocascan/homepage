@@ -37,11 +37,9 @@ const Home = () => {
           </p>
           <div className="flex flex-col lg:flex-row">
             <div className="mb-5 lg:mr-6 lg:mb-0">
-              <a href={docsDomain}>
-                <Button uppercase disabled>
-                  {"Start Learning"}
-                </Button>
-              </a>
+              <Button uppercase disabled>
+                {"Start Learning"}
+              </Button>
             </div>
             <div>
               <a href={docsDomain}>

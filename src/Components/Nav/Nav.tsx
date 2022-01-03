@@ -61,8 +61,8 @@ const Nav: React.FC = () => {
           </Link>
           <div className="hidden lg:block">
             <ul className="flex flex-row">
-              {navLinks?.map((e: any) => (
-                <li>
+              {navLinks?.map((e: any, i) => (
+                <li key={i}>
                   {/^https?:\/\//i.test(e.link) ? (
                     <a className="text-text-light text-lg mx-10" href={e.link}>
                       {e.name}
