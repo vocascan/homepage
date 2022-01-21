@@ -11,6 +11,8 @@ import HamburgerMenuIcon from "../../images/icons/hamburger.svg";
 import useWindowDimensions from "../../hooks/UseWindowDimensions";
 import { useScrollBlock } from "../../hooks/useScrollBlock";
 
+import { webDomain } from "../../utils/constants";
+
 const Nav: React.FC = () => {
   const { height } = useWindowDimensions();
   const [blockScroll, allowScroll] = useScrollBlock();
@@ -77,9 +79,11 @@ const Nav: React.FC = () => {
             </ul>
           </div>
           <div className="hidden lg:block">
-            <Button block uppercase disabled>
-              {"Start Learning"}
-            </Button>
+            <a href={webDomain}>
+              <Button block uppercase>
+                {"Start Learning"}
+              </Button>
+            </a>
           </div>
           <img
             className="h-11 lg:hidden"
@@ -120,9 +124,11 @@ const Nav: React.FC = () => {
           ))}
         </ul>
         <div className="mt-5">
-          <Button block uppercase disabled onClick={triggerHamburgerMenu}>
-            {"Start Learning"}
-          </Button>
+          <a href={webDomain}>
+            <Button block uppercase onClick={triggerHamburgerMenu}>
+              {"Start Learning"}
+            </Button>
+          </a>
         </div>
       </div>
     </>

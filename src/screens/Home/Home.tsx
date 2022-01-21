@@ -16,7 +16,7 @@ import SettingsIcon from "../../images/icons/settings.svg";
 import "./Home.scss";
 import OfferBox from "../../Components/OfferBox/OfferBox";
 import useWindowDimensions from "../../hooks/UseWindowDimensions";
-import { docsDomain } from "../../utils/constants";
+import { docsDomain, webDomain } from "../../utils/constants";
 
 const Home = () => {
   //fetch width to check whether feature should be reversed or not at specific display resolution
@@ -37,9 +37,9 @@ const Home = () => {
           </p>
           <div className="flex flex-col lg:flex-row">
             <div className="mb-5 lg:mr-6 lg:mb-0">
-              <Button uppercase disabled>
-                {"Start Learning"}
-              </Button>
+              <a href={webDomain}>
+                <Button uppercase>{"Start Learning"}</Button>
+              </a>
             </div>
             <div>
               <a href={docsDomain}>
