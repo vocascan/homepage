@@ -16,7 +16,7 @@ import SettingsIcon from "../../images/icons/settings.svg";
 import "./Home.scss";
 import OfferBox from "../../Components/OfferBox/OfferBox";
 import useWindowDimensions from "../../hooks/UseWindowDimensions";
-import { docsDomain, webDomain } from "../../utils/constants";
+import { docsDomain, githubDomain, webDomain } from "../../utils/constants";
 
 const Home = () => {
   //fetch width to check whether feature should be reversed or not at specific display resolution
@@ -108,16 +108,23 @@ const Home = () => {
             if you do not want to use ours. This gives you the greatest control
             over your data. Learn more about how to use Vocascan.
           </p>
-          <a href={docsDomain}>
-            <Button
-              className="mx-auto mt-5"
-              variant={"outline"}
-              appearance="green"
-              uppercase
-            >
-              {"Learn more"}
-            </Button>
-          </a>
+          <div className="flex flex-row justify-center">
+            <a href={githubDomain}>
+              <Button className="mr-5 mt-5" uppercase>
+                {"Check out Github"}
+              </Button>
+            </a>
+            <a href={docsDomain}>
+              <Button
+                className="mx-auto mt-5"
+                variant={"outline"}
+                appearance="green"
+                uppercase
+              >
+                {"Learn more"}
+              </Button>
+            </a>
+          </div>
         </div>
         <div className="w-full mb-10 ">
           <h1 className="uppercase text-xl text-text-light text-center mb-2 mt-20">

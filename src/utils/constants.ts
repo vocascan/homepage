@@ -25,3 +25,4 @@ export const navLinks = [
 
 export const docsDomain = "https://docs.vocascan.com";
 export const webDomain = "https://web.vocascan.com";
+export const githubDomain = "https://github.com/vocascan";
